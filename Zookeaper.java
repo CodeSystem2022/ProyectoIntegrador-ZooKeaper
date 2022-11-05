@@ -23,7 +23,7 @@ public class Zookeaper {
             System.out.println("Ingrese la contraseña para el personal");
             auxiliar = sn.nextLine();
             intentoContraseña++;
-            contraseña = "contraseña";
+            contraseña = "pay";
             if(intentoContraseña >= 4){
                 System.out.println("Ingreso erroneamente la contraseña demasiadas veces");
                 salir=true;
@@ -42,29 +42,55 @@ public class Zookeaper {
                 System.out.println("4-Salir");
                 System.out.println("Introduce un numero");
                 opcion = sn.nextInt();
-                try {
-                    switch (opcion) {
-                        case 1:
-                            System.out.println("opcion 1");
-                            break;
-                        case 2:
-                            System.out.println("opcion 2");
-                            break;
-                        case 3:
-                            System.out.println("opcion 3");
-                            break;
-                        case 4:
-                            salir = true;
-                            System.out.println("salir");
-                            break;
+                
+                switch(opcion){
+                    case 1:
+                        novedades();
+                    break;
+                    case 2:
+                        turnos();
+                    break;
+                    case 3:
+                        visitas();
+                    break;    
+                     case 4:
+                        salir = true;
+                 System.out.println("salir");
+                         break;
                         default:
-                            System.out.println("opcion no valida");
-                    }
-                } catch (Exception e) {
-                    System.out.println(e.getMessage());
-                    sn.next();
+                System.out.println("opcion no valida");
                 }
             }
         } while (salir != true);
     }
+
+    public static void novedades(){
+            System.out.println("1-Novedades");
+    }
+            
+    public static void turnos(){
+        
+            System.out.println("---------Turnos-------------");
+		
+            System.out.println("Bienvenido a su turno");
+	    System.out.println("");
+	    System.out.println("Seleccione turno: ");
+            System.out.println("1. Turno Matutino");
+	    System.out.println("2. Turno Tarde");
+	    System.out.println("3. Turno Noche");
+            
+            System.out.println("");
+            
+    }      
+            
+    public static void visitas(){
+           System.out.println("------------Visitas Veterinarias----------");
+           System.out.println("Las visitas de chequeo son organizadas de forma azarosa,la proxima vista del veterinario sera a ver a los osos");
+           System.out.println("");
+	   System.out.println("Para una visita de emergencia dirijase al veterinario 24 hrs en el tablero de emergencias");
+	   System.out.println("");
+    }
+
+
+
 }
