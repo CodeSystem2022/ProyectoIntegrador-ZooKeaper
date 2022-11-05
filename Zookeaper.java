@@ -8,6 +8,9 @@ public class Zookeaper {
         menuingreso();
     }
 
+    /**
+     * 
+     */
     public static void menuingreso() {
         Scanner sn = new Scanner(System.in);
         String auxiliar;
@@ -23,7 +26,7 @@ public class Zookeaper {
             System.out.println("Ingrese la contraseña para el personal");
             auxiliar = sn.nextLine();
             intentoContraseña++;
-            contraseña = "contraseña";
+            contraseña = "pay";
             if(intentoContraseña >= 4){
                 System.out.println("Ingreso erroneamente la contraseña demasiadas veces");
                 salir=true;
@@ -48,7 +51,7 @@ public class Zookeaper {
                             System.out.println("opcion 1");
                             break;
                         case 2:
-                            System.out.println("opcion 2");
+                            System.out.println("alimentacion");
                             break;
                         case 3:
                             System.out.println("opcion 3");
@@ -68,3 +71,4 @@ public class Zookeaper {
         } while (salir != true);
     }
 }
+    
