@@ -29,6 +29,7 @@ public class Zookeaper {
         } while (!contraseña.equals(auxiliar));
         
         do {
+             //comentario ejemplo
             if (contraseña.equals(auxiliar)) {
                 System.out.println("ADMINISTRACION");
                 System.out.println("BIENVENIDO AL MENU DE INICIO");
